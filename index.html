@@ -87,7 +87,7 @@
                                               </div>
                                               
                                             <div class="md-form mat-2">
-                                              <input type="number" id="productPrice" class="form-control">
+                                              <input type="number" id="productPrice" class="form-control" required>
                                               <label for="price">Price Per Unit</label>
                                               </div>
                                             
@@ -158,9 +158,9 @@
                                             R <span id='price1'></span>
                                         </td>
                                         <td style="text-align:center">
-                                            <i class="fas fa-plus-circle p-3 text-success" onclick="displayAddForm(); noSellForm(); updateProduct(0)"></i>
+                                            <i class="fas fa-plus-circle p-3 text-success" onclick="add(); sellNo(); updateProduct(0)"></i>
                                             <span id='quantity1'></span>
-                                            <i class="fas fa-minus-circle p-3 text-danger"  onclick="displaySellForm(); noAddForm(); updateProduct(0)"></i>
+                                            <i class="fas fa-minus-circle p-3 text-danger" onclick="sell(); addNo(); updateProduct(0)"></i>
                                         </td>
                                     </tr>
                                     <tr>
@@ -170,9 +170,9 @@
 
                                         </td>
                                         <td style="text-align:center">
-                                            <i class="fas fa-plus-circle p-3 text-success"  onclick="displayAddForm(); noSellForm(); updateProduct(1)"></i>
+                                            <i class="fas fa-plus-circle p-3 text-success"  onclick="add(); sellNo(); updateProduct(1)"></i>
                                             <span id='quantity2'></span>
-                                            <i class="fas fa-minus-circle p-3 text-danger" onclick="displaySellForm(); noAddForm(); updateProduct(1)"></i>
+                                            <i class="fas fa-minus-circle p-3 text-danger" onclick="sell(); addNo(); updateProduct(1)"></i>
                                         </td>
                                     </tr>
                                     <tr>
@@ -182,9 +182,9 @@
 
                                         </td>
                                         <td style="text-align:center">
-                                            <i class="fas fa-plus-circle p-3 text-success"  onclick="displayAddForm(); noSellForm(); updateProduct(2)"></i>
+                                            <i class="fas fa-plus-circle p-3 text-success"  onclick="add(); sellNo(); updateProduct(2)"></i>
                                             <span id='quantity3'></span>
-                                            <i class="fas fa-minus-circle p-3 text-danger" onclick="displaySellForm(); noAddForm(); updateProduct(2)"></i>
+                                            <i class="fas fa-minus-circle p-3 text-danger" onclick="sell(); addNo();; updateProduct(2)"></i>
                                         </td>
                                     </tr>
                                     </tbody>
